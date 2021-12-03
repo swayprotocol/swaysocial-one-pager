@@ -12,14 +12,22 @@
 
 h1 {
   font-weight: bold;
-  font-size: 64px;
+  font-size: 48px;
   line-height: 1.1;
+
+  @media only screen and (min-width: 768px) {
+    font-size: 64px;
+  }
 }
 
 h2 {
   font-weight: bold;
-  font-size: 48px;
+  font-size: 32px;
   line-height: 1.1;
+
+  @media only screen and (min-width: 768px) {
+    font-size: 48px;
+  }
 }
 
 h4 {
@@ -81,7 +89,10 @@ h4 {
 }
 
 .page-section {
-  padding: 60px 0;
+  .container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 .element-left,
@@ -89,6 +100,7 @@ h4 {
   .container {
     position: relative;
     z-index: 1;
+    overflow: hidden;
   }
 }
 
@@ -130,6 +142,11 @@ h4 {
 
   .container {
     display: flex;
+    justify-content: center;
+
+    @media only screen and (min-width: 768px) {
+      justify-content: inherit;
+    }
   }
 
   .header-nav {
@@ -158,11 +175,27 @@ h4 {
 
   .hero-section-inner {
     padding: 20px 0 50px;
+    overflow: hidden;
+    position: relative;
   }
 
   .hero-el {
     display: flex;
     justify-content: flex-end;
+    position: absolute;
+    pointer-events: none;
+    right: -50%;
+    top: 40%;
+
+    @media only screen and (min-width: 768px) {
+      position: relative;
+      top: auto;
+      right: auto;
+    }
+  }
+
+  .text-el {
+    z-index: 1;
   }
 
   h1 {
@@ -170,43 +203,68 @@ h4 {
   }
 }
 
-
 .partners {
   background: linear-gradient(360deg, #020009 -21.15%, #0E1631 139.42%);
   display: flex;
 
   .container {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
     padding: 20px 0;
+
+    @media only screen and (min-width: 1200px) {
+      justify-content: space-between;
+    }
   }
 
   figure {
-    margin: 0;
+    margin: 5px;
     display: flex;
+    height: 40px;
+
+    @media only screen and (min-width: 768px) {
+      height: auto;
+    }
   }
 }
 
 .protocol-section {
-  padding: 80px 0 110px;
-
   h2 {
     margin-bottom: 70px;
   }
 
   .container {
+    @media only screen and (min-width: 768px) {
+      padding-top: 80px;
+      padding-bottom: 110px;
+    }
+
     &:before {
       background-image: url('/assets/elements/protocol1.svg');
       width: 192px;
       height: 400px;
+      background-position: 100% 5%;
+      left: -15%;
+
+      @media only screen and (min-width: 992px) {
+        left: 0;
+        background-position: center;
+      }
     }
 
     &:after {
       background-image: url('/assets/elements/protocol2.svg');
       width: 133px;
-      right: 0;
-      height: 510px;
-      background-position: bottom;
+      right: -15%;
+      height: 100%;
+      background-position: 100% 90%;
+
+      @media only screen and (min-width: 992px) {
+        right: 0;
+        height: 510px;
+        background-position: bottom;
+      }
     }
   }
 }
@@ -215,23 +273,39 @@ h4 {
   background-color: #FBF8FE;
   position: relative;
   overflow: hidden;
-  padding: 140px 0 110px;
 
   h2 {
-    margin-bottom: 80px;
+    margin-bottom: 40px;
+    @media only screen and (min-width: 768px) {
+      margin-bottom: 80px;
+    }
   }
 
   .container {
+    @media only screen and (min-width: 768px) {
+      padding-top: 140px;
+      padding-bottom: 110px;
+    }
+
     &:before {
       background-image: url('/assets/elements/staking1.svg');
       width: 171px;
       left: 50px;
+      display: none;
+
+      @media only screen and (min-width: 992px) {
+        display: block;
+      }
     }
 
     &:after {
       background-image: url('/assets/elements/staking2.svg');
       width: 209px;
-      right: 50px;
+      right: -15%;
+
+      @media only screen and (min-width: 768px) {
+        right: 50px;
+      }
     }
   }
 }
@@ -241,7 +315,6 @@ h4 {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 100%;
-  padding: 80px 0 100px;
 
   h2 {
     margin-bottom: 60px;
@@ -283,10 +356,21 @@ h4 {
   }
 
   .container {
+    @media only screen and (min-width: 768px) {
+      padding-top: 80px;
+      padding-bottom: 110px;
+    }
+
     &:after {
       background-image: url('/assets/elements/s-icon.svg');
       width: 211px;
-      right: 60px;
+      right: -15%;
+      background-position: bottom;
+
+      @media only screen and (min-width: 992px) {
+        right: 60px;
+        background-position: center;
+      }
     }
   }
 
@@ -307,8 +391,17 @@ h4 {
     z-index: -1;
   }
 
+  h2 {
+    margin-bottom: 50px;
+  }
+
   .container {
-    z-index: inherit;;
+    z-index: inherit;
+
+    @media only screen and (min-width: 768px) {
+      padding-top: 80px;
+      padding-bottom: 80px;
+    }
 
     &:before {
       background-image: url('/assets/elements/all1.svg');
@@ -337,23 +430,37 @@ h4 {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 100%;
-  padding: 100px 0;
 
-  .inner-connect {
-    margin-top: 4rem;
+  h2 {
+    margin-bottom: 60px;
   }
 
   .container {
+    @media only screen and (min-width: 768px) {
+      padding-top: 100px;
+      padding-bottom: 100px;
+    }
+
     &:before {
       background-image: url('/assets/elements/connect1.svg');
       width: 136px;
       left: 150px;
+      display: none;
+
+      @media only screen and (min-width: 992px) {
+        display: block;
+      }
     }
 
     &:after {
       background-image: url('/assets/elements/connect2.svg');
       width: 257px;
       right: 50px;
+      display: none;
+
+      @media only screen and (min-width: 992px) {
+        display: block;
+      }
     }
   }
 }
@@ -370,6 +477,7 @@ h4 {
     box-shadow: -6px 6px 0px rgba(141, 77, 232, 0.25);
     border-radius: 2px;
     padding: 30px 50px 20px;
+    margin: 0;
   }
 
   .dive-section-half {
@@ -378,7 +486,10 @@ h4 {
   }
 
   .container {
-    padding: 80px 0 200px;
+    @media only screen and (min-width: 768px) {
+      padding-top: 80px;
+      padding-bottom: 200px;
+    }
 
     &:before {
       background-image: url('/assets/elements/divein1.svg');
@@ -389,14 +500,31 @@ h4 {
     &:after {
       background-image: url('/assets/elements/divein2.svg');
       width: 429px;
-      right: 0px;
+      right: -15%;
+
+      @media only screen and (min-width: 768px) {
+        right: 0;
+      }
     }
   }
 }
 
 .footer-section {
   background-color: #131D42;
-  padding: 150px 0;
+  padding: 60px 0;
+
+  @media only screen and (min-width: 768px) {
+    padding: 150px 0;
+  }
+
+  .col-md-3 {
+    text-align: center;
+    margin-bottom: 16px;
+
+    @media only screen and (min-width: 768px) {
+      text-align: left;
+    }
+  }
 
   .footer-nav {
     padding: 0 25px;
@@ -423,6 +551,11 @@ h4 {
   display: flex;
   justify-content: space-between;
   max-width: 200px;
+  margin: 0 auto;
+
+  @media only screen and (min-width: 768px) {
+    margin: 0;
+  }
 
   .footer-connect-item {
     background-color: #3F07ED;
@@ -432,5 +565,10 @@ h4 {
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+    transition: background-color ease-out 0.1s;
+
+    &:hover {
+      background-color: #F8CDF3;
+    }
   }
 }

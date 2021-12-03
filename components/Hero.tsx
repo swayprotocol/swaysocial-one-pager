@@ -11,7 +11,7 @@ const Hero = () => (
       <div className="hero-section-inner">
         <div className="container ">
           <div className="row">
-            <div className="col-md-5">
+            <div className="col-md-5 text-el">
               <h1 className="mb-4">Monetize<br/>the Metaverse</h1>
               <p>
                 <strong>Sway Social</strong> is the first social media protocol for Metacreators that uses NFTs to translate

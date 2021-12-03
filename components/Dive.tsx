@@ -2,10 +2,10 @@ import React from 'react';
 import Button from './Button';
 
 const DiveIn = () => (
-  <section className="dive-section inverted-colors element-left element-right">
+  <section className="dive-section page-section inverted-colors element-left element-right">
     <div className="container">
       <div className="row">
-        <div className="col-md-12 col-lg-12 col-xl-10 mx-auto">
+        <div className="col-md-12 col-lg-12 col-xl-10 mx-md-auto">
           <h2 className="text-center">Dive In The<br/>Creator Pools</h2>
           <div className="row dive-section-inner">
             <div className="col-md-6 dive-section-half">

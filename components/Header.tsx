@@ -7,8 +7,8 @@ const Header = () => (
       <a href="/">
         <Logo/>
       </a>
-      <nav className="header-nav">
-        <a href="#" target="_blank" className="header-nav-item">Explore <strong>Creator Pools</strong></a>
+      <nav className="header-nav d-none d-md-inline-flex">
+        <a href="#" target="_blank" className="header-nav-item">Explore{' '}<strong>Creator Pools</strong></a>
       </nav>
     </div>
   </header>
