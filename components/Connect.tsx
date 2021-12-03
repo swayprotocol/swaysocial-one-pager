@@ -1,0 +1,41 @@
+import React from 'react';
+import Discord from '/public/icons/discord.svg';
+import Twitter from '/public/icons/twitter.svg';
+import Github from '/public/icons/github.svg';
+import Telegram from '/public/icons/telegram.svg';
+
+const Connect = () => (
+  <section className="connect-section page-section inverted-colors element-left element-right">
+    <div className="container">
+      <div className="row">
+        <h2 className="text-center mb-4">Connect With<br/>The Sway Community</h2>
+        <div className="col-md-6 mx-auto inner-connect">
+          <div className="row">
+            <div className="col-md-3 text-center">
+              <a href="#" title="Connect on Twitter" className="btn-social tw mt">
+                <Twitter fill="#fff"/>
+              </a>
+            </div>
+            <div className="col-md-3 text-center">
+              <a href="#" title="Connect on Telegram" className="btn-social tg">
+                <Telegram fill="#fff"/>
+              </a>
+            </div>
+            <div className="col-md-3 text-center">
+              <a href="#" title="Connect on Discord" className="btn-social dc mt">
+                <Discord fill="#fff"/>
+              </a>
+            </div>
+            <div className="col-md-3 text-center">
+              <a href="#" title="Connect on GitHub" className="btn-social gh">
+                <Github fill="#fff"/>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+);
+
+export default Connect;
