@@ -8,10 +8,8 @@ import Hero from '../components/Hero';
 import Staking from '../components/Staking';
 import DiveIn from '../components/Dive';
 
-const TITLE = 'Monetize the Metaverse | Sway Social';
-
 const IndexPage = () => (
-  <Layout title={TITLE}>
+  <Layout>
     <Hero/>
     <Video/>
     <SocialProtocol/>
