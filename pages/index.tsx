@@ -11,11 +11,11 @@ import DiveIn from '../components/Dive';
 const IndexPage = () => (
   <Layout>
     <Hero/>
-    <Video/>
+    {/*<Video/>*/}
     <SocialProtocol/>
     <Staking/>
     <DiveIn/>
-    <StartStaking/>
+    {/*<StartStaking/>*/}
     <Connect/>
   </Layout>
 );

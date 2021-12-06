@@ -12,9 +12,9 @@ const Partners = () => (
       <figure>
         <img src="/assets/partners/au21-capital.svg" alt="AU21 Capital"/>
       </figure>
-      <figure>
-        <img src="/assets/partners/capital.svg" alt="01 Capital"/>
-      </figure>
+      {/*<figure>*/}
+      {/*  <img src="/assets/partners/capital.svg" alt="01 Capital"/>*/}
+      {/*</figure>*/}
       <figure>
         <img src="/assets/partners/lucidBlue.svg" alt="LucidBlue"/>
       </figure>

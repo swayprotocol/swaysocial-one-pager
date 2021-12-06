@@ -18,7 +18,7 @@ const SocialProtocol = () => (
               </p>
               <p>
                 <strong>The SWAY token, represented as a simple monetisation of ‘Following’ or ‘Likes’ from the
-                  traditional social media experience, is a social media evolution in Web3.</strong>
+                  traditional social media experience, is a social evolution in Web3.</strong>
               </p>
             </div>
             <div className="col-md-6 px-5">
@@ -34,11 +34,11 @@ const SocialProtocol = () => (
               </p>
             </div>
           </div>
-          <Button
-            url="#"
-            className="justify-content-center mt-5">
-            White{' '}<strong>Paper</strong>
-          </Button>
+          {/*<Button*/}
+          {/*  url="#"*/}
+          {/*  className="justify-content-center mt-5">*/}
+          {/*  White{' '}<strong>Paper</strong>*/}
+          {/*</Button>*/}
         </div>
       </div>
     </div>

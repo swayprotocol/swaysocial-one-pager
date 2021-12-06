@@ -5,7 +5,7 @@ const Staking = () => (
   <section className="staking-section page-section element-right inverted-colors">
     <div className="container">
       <div className="row">
-        <div className="col-lg-5 mx-auto">
+        <div className="col-lg-6 mx-auto">
           <h2 className="text-center">Staking Is The<br/>New Following</h2>
           <div className="px-md-5 mb-5">
             <p className="text-center">The Sway Social Protocol is powered by the native SWAY token, staked to replicate
@@ -21,7 +21,8 @@ const Staking = () => (
               from their specific pools.</p>
           </div>
           <Button
-            url="#"
+            url="https://www.gate.io/trade/SWAY_USDT"
+            target="_blank"
             className="justify-content-center">
             Buy{' '}<strong>$SWAY</strong>
           </Button>

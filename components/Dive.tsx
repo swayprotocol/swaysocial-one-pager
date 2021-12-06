@@ -32,7 +32,8 @@ const DiveIn = () => (
             </div>
           </div>
           <Button
-            url="#"
+            url="https://github.com/swayprotocol"
+            target="_blank"
             className="justify-content-center mt-5">
             Contribute to{' '}<strong>SWAY</strong>
           </Button>

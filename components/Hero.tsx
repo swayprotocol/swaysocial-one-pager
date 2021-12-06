@@ -14,14 +14,14 @@ const Hero = () => (
             <div className="col-md-5 text-el">
               <h1 className="mb-4">Monetize<br/>the Metaverse</h1>
               <p>
-                <strong>Sway Social</strong> is the first social media protocol for Metacreators that uses NFTs to translate
-                social capital into an asset class.
-                This allows anyone to monetize their Metaverse on their terms.
+                <strong>Sway Social</strong> is the first social protocol for Metacreators that uses NFTs to translate
+                social capital into an asset class. This allows anyone to monetize their Metaverse on their terms.
               </p>
               <Button
                 url="#"
-                className="mt-5">
-                Explore{' '}<strong>Creator Pools</strong>
+                className="mt-5 disabled">
+                Explore{' '}<strong>Creator Pools</strong><br/>
+                <span className="secondary-text">(coming soon)</span>
               </Button>
             </div>
             <div className="col-md-7 hero-el">
