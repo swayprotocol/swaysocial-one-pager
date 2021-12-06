@@ -43,3 +43,5 @@ jobs:
         with:
           repoToken: "${{ secrets.GITHUB_TOKEN }}"
           firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT_SWAY_ONE_PAGE }}"
+          channelId: live
+          projectId: swaysocial-one-pager
