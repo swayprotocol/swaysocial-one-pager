@@ -5,7 +5,9 @@
     "build": "next build",
     "export": "next build && next export",
     "start": "next start",
-    "type-check": "tsc"
+    "type-check": "tsc",
+    "predeploy": "yarn run export",
+    "deploy": "firebase deploy"
   },
   "dependencies": {
     "bootstrap": "^5.1.3",
