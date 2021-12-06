@@ -5,6 +5,7 @@
 
 # testing
 /coverage
+tsconfig.tsbuildinfo
 
 # next.js
 /.next/
@@ -12,7 +13,6 @@
 
 # production
 /build
-
 # misc
 .DS_Store
 *.pem
@@ -33,3 +33,7 @@ yarn-error.log*
 
 #IDE
 /.idea
+
+# Firebase
+/.firebase
+firebase-debug.log
