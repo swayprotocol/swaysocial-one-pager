@@ -98,6 +98,21 @@ h4 {
   }
 }
 
+.form {
+  display: flex;
+  .form-input {
+    padding: 4px 10px;
+    border: 1px solid #3f07ed;
+    box-shadow: -6px 6px 0px rgb(141 77 232 / 25%);
+    border-radius: 2px;
+    margin-right: 20px;
+
+    @media only screen and (min-width: 992px) {
+      width: 25%;
+    }
+  }
+}
+
 .page-section {
   position: relative;
   overflow: hidden;
@@ -319,6 +334,17 @@ h4 {
       @media only screen and (min-width: 768px) {
         right: 50px;
       }
+    }
+  }
+}
+
+.form-section {
+  h2 {
+    margin-bottom: 50px;
+  }
+  .container {
+    @media only screen and (min-width: 768px) {
+      padding-top: 110px;
     }
   }
 }
