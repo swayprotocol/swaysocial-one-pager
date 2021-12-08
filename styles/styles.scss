@@ -572,3 +572,104 @@ h4 {
     }
   }
 }
+
+// hero.svg animations
+.svg-net {
+  animation: waveAnimation 20s ease-in-out alternate infinite;
+  will-change: transform;
+}
+
+.svg-flicker {
+  animation: flickerAnimation 3s ease-in-out alternate infinite;
+}
+
+.svg-floating {
+  animation: floatYAnimation 5s ease-in-out infinite alternate;
+  will-change: transform;
+}
+
+.svg-floating-h {
+  animation: floatXAnimation 5s ease-in-out infinite alternate;
+  will-change: transform;
+}
+
+.svg-line {
+  animation: drawAnimation ease-in-out infinite;
+}
+
+.delay1 {
+  animation-delay: 1s;
+}
+
+.delay2 {
+  animation-delay: 3s;
+}
+
+.delay3 {
+  animation-delay: 6s;
+}
+
+.speed1 {
+  animation-duration: 4s;
+}
+
+.speed2 {
+  animation-duration: 6s;
+}
+
+.speed3 {
+  animation-duration: 8s;
+}
+
+.speed4 {
+  animation-duration: 12s;
+}
+
+.speed5 {
+  animation-duration: 16s;
+}
+
+@keyframes waveAnimation {
+  0% {
+    transform: rotate(0deg) scale(1) skew(0deg);
+  }
+  50% {
+    transform: rotate(2deg) scale(1.04) skew(-5deg) translateY(-5px);
+  }
+}
+
+@keyframes flickerAnimation {
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+    opacity: 1;
+  }
+  20%, 24%, 55% {
+    opacity: 0;
+  }
+}
+
+@keyframes drawAnimation {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 400;
+  }
+}
+
+@keyframes floatYAnimation {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes floatXAnimation {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(40px);
+  }
+}
