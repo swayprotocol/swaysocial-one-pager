@@ -7,6 +7,7 @@ import Connect from '../components/Connect';
 import Hero from '../components/Hero';
 import Staking from '../components/Staking';
 import DiveIn from '../components/Dive';
+import Subscribe from '../components/Subscribe';
 
 const IndexPage = () => (
   <Layout>
@@ -16,6 +17,7 @@ const IndexPage = () => (
     <Staking/>
     <DiveIn/>
     {/*<StartStaking/>*/}
+    <Subscribe/>
     <Connect/>
   </Layout>
 );
