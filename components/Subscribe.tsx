@@ -3,10 +3,12 @@ import React from 'react';
 function Subscribe() {
   const [error, setError] = React.useState(false);
   const [success, setSuccess] = React.useState(false);
+  const [pending, setPending] = React.useState(false);
 
   const subscribeUser = async event => {
     event.preventDefault();
     setError(false);
+    setPending(true);
 
     const formData = new FormData();
     formData.append('email', event.target.email.value);
@@ -26,6 +28,8 @@ function Subscribe() {
       setSuccess(true);
     } catch (e) {
       setError(true);
+    } finally {
+      setPending(false);
     }
   };
 
@@ -38,7 +42,7 @@ function Subscribe() {
             {!success ? (
               <form className="form justify-content-center" onSubmit={subscribeUser}>
                 <input id="email" className="form-input" type="email" autoComplete="email" placeholder="E-mail" required/>
-                <button type="submit" className="btn btn-primary">Subscribe</button>
+                <button type="submit" className={`btn btn-primary ${pending ? 'disabled' : ''}`}>Subscribe</button>
               </form>
             ) : (
               <p className="text-center">
