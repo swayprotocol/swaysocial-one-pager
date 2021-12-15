@@ -1,9 +1,13 @@
 import React from 'react';
 import Button from './Button';
+import Protocol1 from '/public/assets/elements/protocol1.svg';
+import Protocol2 from '/public/assets/elements/protocol2.svg';
 
 const SocialProtocol = () => (
-  <section className="protocol-section page-section element-left element-right">
+  <section className="protocol-section page-section element-left-animated element-right-animated">
     <div className="container">
+      <Protocol1 className="svg-el-left"/>
+      <Protocol2 className="svg-el-right"/>
       <div className="row">
         <h2 className="text-center">The First NFT Social Protocol<br/>For Web3 And The Metaverse</h2>
         <div className="col-md-12 col-lg-8 col-xl-8 mx-auto">

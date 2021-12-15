@@ -166,7 +166,9 @@ h4 {
 }
 
 .element-left,
-.element-right {
+.element-right,
+.element-left-animated,
+.element-right-animated {
   .container {
     position: relative;
     z-index: 1;
@@ -202,6 +204,30 @@ h4 {
       height: 100%;
       z-index: -1;
     }
+  }
+}
+
+.element-left-animated {
+  .svg-el-left {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    z-index: -1;
+    background-image: none !important;
+  }
+}
+
+.element-right-animated {
+  .svg-el-right {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    z-index: -1;
+    background-image: none !important;
   }
 }
 
@@ -311,7 +337,8 @@ h4 {
       padding-bottom: 110px;
     }
 
-    &:before {
+    &:before,
+    .svg-el-left {
       background-image: url('/assets/elements/protocol1.svg');
       width: 192px;
       height: 400px;
@@ -324,7 +351,8 @@ h4 {
       }
     }
 
-    &:after {
+    &:after,
+    .svg-el-right {
       background-image: url('/assets/elements/protocol2.svg');
       width: 133px;
       right: -15%;
@@ -358,7 +386,8 @@ h4 {
       padding-bottom: 110px;
     }
 
-    &:before {
+    &:before,
+    .svg-el-left {
       background-image: url('/assets/elements/staking1.svg');
       width: 171px;
       left: 50px;
@@ -369,7 +398,8 @@ h4 {
       }
     }
 
-    &:after {
+    &:after,
+    .svg-el-right {
       background-image: url('/assets/elements/staking2.svg');
       width: 209px;
       right: -15%;
@@ -548,7 +578,7 @@ h4 {
 }
 
 .dive-section {
-  background: linear-gradient(176.17deg, #3F07ED -23.13%, rgb(0, 0, 0) 100%);
+  background: linear-gradient(176.17deg, #3F07ED -7%, rgb(0, 0, 0) 33%, rgb(0, 0, 0) 100%);
 
   h2 {
     margin-bottom: 70px;
@@ -573,13 +603,15 @@ h4 {
       padding-bottom: 200px;
     }
 
-    &:before {
+    &:before,
+    .svg-el-left {
       background-image: url('/assets/elements/divein1.svg');
       width: 364px;
       left: 0px;
     }
 
-    &:after {
+    &:after,
+    .svg-el-right {
       background-image: url('/assets/elements/divein2.svg');
       width: 429px;
       right: -15%;

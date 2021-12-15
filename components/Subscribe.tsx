@@ -1,4 +1,6 @@
 import React from 'react';
+import Staking1 from '/public/assets/elements/staking1.svg';
+import Staking2 from '/public/assets/elements/staking2.svg';
 
 function Subscribe() {
   const [error, setError] = React.useState(false);
@@ -34,8 +36,10 @@ function Subscribe() {
   };
 
   return (
-    <section className="start-staking-section form-section page-section element-left element-right">
+    <section className="start-staking-section form-section page-section element-left-animated element-right-animated">
       <div className="container">
+        <Staking1 className="svg-el-left"/>
+        <Staking2 className="svg-el-right"/>
         <div className="row">
           <div className="col-md-10 mx-auto">
             <h2 className="text-center">Be The First To Know</h2>
