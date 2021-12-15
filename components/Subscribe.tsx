@@ -1,12 +1,16 @@
 import React from 'react';
+import Staking1 from '/public/assets/elements/staking1.svg';
+import Staking2 from '/public/assets/elements/staking2.svg';
 
 function Subscribe() {
   const [error, setError] = React.useState(false);
   const [success, setSuccess] = React.useState(false);
+  const [pending, setPending] = React.useState(false);
 
   const subscribeUser = async event => {
     event.preventDefault();
     setError(false);
+    setPending(true);
 
     const formData = new FormData();
     formData.append('email', event.target.email.value);
@@ -26,19 +30,23 @@ function Subscribe() {
       setSuccess(true);
     } catch (e) {
       setError(true);
+    } finally {
+      setPending(false);
     }
   };
 
   return (
-    <section className="start-staking-section form-section page-section element-left element-right">
+    <section className="start-staking-section form-section page-section element-left-animated element-right-animated">
       <div className="container">
+        <Staking1 className="svg-el-left"/>
+        <Staking2 className="svg-el-right"/>
         <div className="row">
           <div className="col-md-10 mx-auto">
             <h2 className="text-center">Be The First To Know</h2>
             {!success ? (
               <form className="form justify-content-center" onSubmit={subscribeUser}>
                 <input id="email" className="form-input" type="email" autoComplete="email" placeholder="E-mail" required/>
-                <button type="submit" className="btn btn-primary">Subscribe</button>
+                <button type="submit" className={`btn btn-primary ${pending ? 'disabled' : ''}`}>Subscribe</button>
               </form>
             ) : (
               <p className="text-center">

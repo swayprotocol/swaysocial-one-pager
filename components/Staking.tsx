@@ -23,7 +23,7 @@ const Staking = () => (
           <Button
             url="https://www.gate.io/trade/SWAY_USDT"
             target="_blank"
-            className="justify-content-center">
+            className="justify-content-center btn-secondary">
             Buy{' '}<strong>$SWAY</strong>
           </Button>
         </div>

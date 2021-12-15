@@ -1,1 +1,17 @@
-<svg fill="none" height="232" viewBox="0 0 192 232" width="192" xmlns="http://www.w3.org/2000/svg"><g stroke="#3f07ed" stroke-linejoin="round"><path d="m50 14.4286 13.4286-13.4286v33.5714l-13.4286 13.4286z" fill="#f9f8f2"/><path d="m50 48.0001 13.4286-13.4286h128.0004l-13.429 13.4286z" fill="#f9f8f2"/><path d="m63.4287 1h128.0713v33.5714h-128.0713z" fill="#fff"/><path d="m1 148.429 7.91304-7.429v18.571l-7.91304 7.429z" fill="#fff"/><path d="m1 167 7.63711-6.783h70.36289l-7.5 6.783z" fill="#a4a4a4"/><path d="m9 141h70v19h-70z" fill="#fff"/></g><g fill="#f8cdf3" stroke="#000"><circle cx="156.5" cy="155.5" r="8"/><circle cx="65.5" cy="109.5" r="8"/><circle cx="110.5" cy="223.5" r="8"/></g></svg>
+<svg fill="none" height="232" viewBox="0 0 192 232" width="192" xmlns="http://www.w3.org/2000/svg">
+    <g stroke="#3f07ed" stroke-linejoin="round">
+        <path d="m50 14.4286 13.4286-13.4286v33.5714l-13.4286 13.4286z" fill="#f9f8f2"/>
+        <path d="m50 48.0001 13.4286-13.4286h128.0004l-13.429 13.4286z" fill="#f9f8f2"/>
+        <path d="m63.4287 1h128.0713v33.5714h-128.0713z" fill="#fff"/>
+    <g class="svg-floating speed4">
+        <path d="m1 148.429 7.91304-7.429v18.571l-7.91304 7.429z" fill="#fff"/>
+        <path d="m1 167 7.63711-6.783h70.36289l-7.5 6.783z" fill="#a4a4a4"/>
+        <path d="m9 141h70v19h-70z" fill="#fff"/>
+    </g>
+    </g>
+    <g fill="#f8cdf3" stroke="#000">
+        <circle cx="156.5" cy="155.5" r="8" class="svg-floating speed2 delay3"/>
+        <circle cx="65.5" cy="109.5" r="8"/>
+        <circle cx="110.5" cy="223.5" r="8" class="svg-floating speed3"/>
+    </g>
+</svg>
