@@ -1,9 +1,13 @@
 import React from 'react';
 import Button from './Button';
+import Dive1 from '/public/assets/elements/divein1.svg';
+import Dive2 from '/public/assets/elements/divein2.svg';
 
 const DiveIn = () => (
-  <section className="dive-section page-section inverted-colors element-left element-right">
+  <section className="dive-section page-section inverted-colors element-left-animated element-right-animated">
     <div className="container">
+      <Dive1 className="svg-el-left"/>
+      <Dive2 className="svg-el-right"/>
       <div className="row">
         <div className="col-md-12 col-lg-12 col-xl-10 mx-md-auto">
           <h2 className="text-center">Dive In The<br/>Creator Pools</h2>

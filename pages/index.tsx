@@ -12,7 +12,7 @@ import Subscribe from '../components/Subscribe';
 const IndexPage = () => (
   <Layout>
     <Hero/>
-    {/*<Video/>*/}
+    <Video/>
     <SocialProtocol/>
     <Staking/>
     <DiveIn/>
