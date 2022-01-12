@@ -48,7 +48,7 @@ const Footer = () => (
             <a href="https://twitter.com/swayprotocol" className="footer-connect-item" target="_blank">
               <Twitter fill="#131D42" height="16" width="16"/>
             </a>
-            <a href="https://t.me/cloutdotart" className="footer-connect-item" target="_blank">
+            <a href="https://t.me/swayprotocol" className="footer-connect-item" target="_blank">
               <Telegram fill="#131D42" height="16" width="16"/>
             </a>
             {/*<a href="#" className="footer-connect-item" target="_blank">*/}
