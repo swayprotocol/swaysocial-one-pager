@@ -20,7 +20,7 @@ const Connect = () => (
               </a>
             </div>
             <div className="col-4 text-center">
-              <a href="https://t.me/cloutdotart" target="_blank" title="Connect on Telegram" className="btn-social tg">
+              <a href="https://t.me/swayprotocol" target="_blank" title="Connect on Telegram" className="btn-social tg">
                 <Telegram fill="#fff"/>
               </a>
             </div>
