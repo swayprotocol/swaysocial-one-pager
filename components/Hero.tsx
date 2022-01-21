@@ -18,10 +18,9 @@ const Hero = () => (
                 social capital into an asset class. This allows anyone to monetize their Metaverse on their terms.
               </p>
               <Button
-                url="#"
-                className="mt-5 disabled">
+                url="https://creatorpools.live"
+                className="mt-5">
                 Explore{' '}<strong>Creator Pools</strong><br/>
-                <span className="secondary-text">(coming soon)</span>
               </Button>
             </div>
             <div className="col-md-7 hero-el">
