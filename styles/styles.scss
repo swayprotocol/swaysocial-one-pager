@@ -601,8 +601,12 @@ h4 {
     background: linear-gradient(260.46deg, #3F07ED 21.76%, #F8CDF3 117.91%);
     box-shadow: -6px 6px 0px rgba(141, 77, 232, 0.25);
     border-radius: 2px;
-    padding: 30px 50px 20px;
+    padding: 30px 25px 20px;
     margin: 0;
+
+    @media only screen and (min-width: 768px) {
+      padding: 30px 50px 20px;
+    }
   }
 
   .dive-section-half {
