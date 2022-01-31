@@ -3,6 +3,7 @@ import Partners from './Partners';
 import HeroEl from '/public/assets/elements/hero.svg';
 import Button from './Button';
 import Header from './Header';
+import WhitePaper from './WhitePaper';
 
 const Hero = () => (
   <section>
@@ -30,6 +31,7 @@ const Hero = () => (
         </div>
       </div>
     </div>
+    <WhitePaper />
     <Partners/>
   </section>
 );
