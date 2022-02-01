@@ -211,23 +211,31 @@ h4 {
   .svg-el-left {
     display: block;
     position: absolute;
-    top: 0;
+    top: -80px;
     bottom: 0;
     height: 100%;
     z-index: -1;
     background-image: none !important;
+
+    @media only screen and (min-width: 768px) {
+      top: 0;      
+    }
   }
 }
 
 .element-right-animated {
   .svg-el-right {
-    display: block;
+    display: none;
     position: absolute;
     top: 0;
     bottom: 0;
     height: 100%;
     z-index: -1;
     background-image: none !important;
+
+    @media only screen and (min-width: 768px) {
+      display: block;
+    }
   }
 }
 
@@ -312,12 +320,6 @@ h4 {
   h1 {
     margin-top: 40px;
   }
-}
-
-.whitepaper-section {
-  background: linear-gradient(360deg, #020009 -21.15%, #0E1631 139.42%);
-  padding: 2.5rem;
-  text-align: center;
 }
 
 .partners {

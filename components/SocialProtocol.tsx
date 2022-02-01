@@ -12,7 +12,7 @@ const SocialProtocol = () => (
         <h2 className="text-center">The First NFT Social Protocol<br/>For Web3 And The Metaverse</h2>
         <div className="col-md-12 col-lg-8 col-xl-8 mx-auto">
           <div className="row">
-            <div className="col-md-6 px-5">
+            <div className="col-md-6 px-5 text-center">
               <p>
                 <span className="highlight">Ready to Plug, Play and Earn</span><br/>
                 Behind every successful Metacreator, there is a gamechanging technology.
@@ -25,7 +25,7 @@ const SocialProtocol = () => (
                   traditional social media experience, is a social evolution in Web3.</strong>
               </p>
             </div>
-            <div className="col-md-6 px-5">
+            <div className="col-md-6 px-5 text-center">
               <p>
                 <span className="highlight">Shareconomy for the Metaverse</span><br/>
                 In a traditional Web 2 social media platforms, the number of ‘Followers’ per content creator is directly
