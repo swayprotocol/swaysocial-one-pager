@@ -3,6 +3,18 @@ import Button from './Button';
 import Dive1 from '/public/assets/elements/divein1.svg';
 import Dive2 from '/public/assets/elements/divein2.svg';
 
+const text = (
+  <p>
+    <strong>The Sooner, the Better Rewards</strong><br/>
+    To date, creators have minted more than 3500 NFTs, and more than 10,000 users have interacted with the
+    platform. This first-generation staking program is designed to work during this build-up period, thereby
+    offering a first real taste of the new creator economy while we drive platform participation towards
+    critical mass.
+    Start staking with any Instagram or TikTok username that you believe will join the platform in the
+    future. The sooner you start, the better the rewards.
+  </p>
+);
+
 const DiveIn = () => (
   <section className="dive-section page-section inverted-colors element-left-animated element-right-animated">
     <div className="container">
@@ -23,16 +35,13 @@ const DiveIn = () => (
                 tied directly to the successful sale of an NFT.
               </p>
             </div>
+            <div className="d-none d-md-block col-md-6 dive-section-half">
+              {text}
+            </div>
+          </div>
+          <div className="d-block d-md-none row dive-section-inner mt-5">
             <div className="col-md-6 dive-section-half">
-              <p>
-                <strong>The Sooner, the Better Rewards</strong><br/>
-                To date, creators have minted more than 3500 NFTs, and more than 10,000 users have interacted with the
-                platform. This first-generation staking program is designed to work during this build-up period, thereby
-                offering a first real taste of the new creator economy while we drive platform participation towards
-                critical mass.
-                Start staking with any Instagram or TikTok username that you believe will join the platform in the
-                future. The sooner you start, the better the rewards.
-              </p>
+              {text}
             </div>
           </div>
           <Button

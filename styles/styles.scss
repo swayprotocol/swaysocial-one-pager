@@ -47,6 +47,14 @@ h4 {
   color: #fff;
 }
 
+.center-sm {    
+  text-align: center;    
+
+  @media only screen and (min-width: 768px) {
+    text-align: left;
+  }
+}
+
 .btn {
   display: inline-block;
   color: #fff;
@@ -211,23 +219,31 @@ h4 {
   .svg-el-left {
     display: block;
     position: absolute;
-    top: 0;
+    top: -80px;
     bottom: 0;
     height: 100%;
     z-index: -1;
     background-image: none !important;
+
+    @media only screen and (min-width: 768px) {
+      top: 0;      
+    }
   }
 }
 
 .element-right-animated {
   .svg-el-right {
-    display: block;
+    display: none;
     position: absolute;
     top: 0;
     bottom: 0;
     height: 100%;
     z-index: -1;
     background-image: none !important;
+
+    @media only screen and (min-width: 768px) {
+      display: block;
+    }
   }
 }
 
@@ -286,15 +302,14 @@ h4 {
   .hero-el {
     display: flex;
     justify-content: flex-end;
-    position: absolute;
     pointer-events: none;
-    right: -50%;
-    top: 40%;
+    margin-top: -90px;
 
     @media only screen and (min-width: 768px) {
       position: relative;
       top: auto;
       right: auto;
+      margin-top: 0;
     }
   }
 
@@ -588,8 +603,12 @@ h4 {
     background: linear-gradient(260.46deg, #3F07ED 21.76%, #F8CDF3 117.91%);
     box-shadow: -6px 6px 0px rgba(141, 77, 232, 0.25);
     border-radius: 2px;
-    padding: 30px 50px 20px;
+    padding: 30px 25px 20px;
     margin: 0;
+
+    @media only screen and (min-width: 768px) {
+      padding: 30px 50px 20px;
+    }
   }
 
   .dive-section-half {
