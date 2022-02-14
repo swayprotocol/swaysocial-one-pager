@@ -14,18 +14,18 @@ const Hero = () => (
       <div className="hero-section-inner">
         <div className="container ">
           <div className="row">
-            <div className="col-md-5 text-el">
-              <h1 className="mb-md-4 mb-0 center-sm">SocialFi for<br/>the Metaverse</h1>
-              <p className="d-none d-md-block">
+            <div className="col-lg-5 text-el order-1 order-md-0">
+              <h1 className="mb-md-4 mb-0 center-sm d-none d-md-block">SocialFi for<br/>the Metaverse</h1>
+              <p>
                 <strong>Sway Social</strong> is the first social protocol for Metacreators that uses NFTs to translate
                 social capital into an asset class. This allows anyone to monetize their Metaverse on their terms.
               </p>
               <Button
                 url="https://creatorpools.live"
-                className="mt-5 d-none d-md-block">
+                className="mt-5 justify-content-center justify-content-sm-start">
                 Explore{' '}<strong>Creator Pools</strong>
               </Button>
-              <div className="mt-5 d-none d-md-block">
+              <div className="mt-5">
                 <a href="https://swaysocial.org/whitepaper.pdf" target="_blank" className="hero-link" title="Sway Social White Paper">
                   <BookEl/>
                   <span>White Paper</span>
@@ -40,7 +40,8 @@ const Hero = () => (
                 {/*</a>*/}
               </div>
             </div>
-            <div className="col-md-7 hero-el">
+            <div className="col-lg-7 hero-el order-0 order-md-1">
+              <h1 className="mb-md-4 mb-0 center-sm d-block d-md-none">SocialFi for<br/>the Metaverse</h1>
               <HeroEl/>
             </div>
           </div>
