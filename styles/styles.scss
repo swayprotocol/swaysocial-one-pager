@@ -47,8 +47,8 @@ h4 {
   color: #fff;
 }
 
-.center-sm {    
-  text-align: center;    
+.center-sm {
+  text-align: center;
 
   @media only screen and (min-width: 768px) {
     text-align: left;
@@ -226,7 +226,7 @@ h4 {
     background-image: none !important;
 
     @media only screen and (min-width: 768px) {
-      top: 0;      
+      top: 0;
     }
   }
 }
@@ -319,6 +319,24 @@ h4 {
 
   h1 {
     margin-top: 40px;
+  }
+}
+
+.hero-link {
+  padding: 8px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 2px;
+  margin-right: 20px;
+
+  &:hover {
+    color: #fff;
+    background: linear-gradient(91.88deg, rgba(228, 227, 230, 0.4) 3.18%, rgba(171, 149, 240, 0.4) 97.4%);
+  }
+
+  svg {
+    color: #ceabff;
+    margin-right: 10px;
   }
 }
 

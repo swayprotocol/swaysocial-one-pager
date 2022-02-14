@@ -3,6 +3,9 @@ import Partners from './Partners';
 import HeroEl from '/public/assets/elements/hero.svg';
 import Button from './Button';
 import Header from './Header';
+import BookEl from '/public/icons/book.svg';
+import DocEl from '/public/icons/document.svg';
+import ColEl from '/public/icons/collection.svg';
 
 const Hero = () => (
   <section>
@@ -20,8 +23,22 @@ const Hero = () => (
               <Button
                 url="https://creatorpools.live"
                 className="mt-5 d-none d-md-block">
-                Explore{' '}<strong>Creator Pools</strong><br/>
+                Explore{' '}<strong>Creator Pools</strong>
               </Button>
+              <div className="mt-5 d-none d-md-block">
+                <a href="https://swaysocial.org/whitepaper.pdf" target="_blank" className="hero-link" title="Sway Social White Paper">
+                  <BookEl/>
+                  <span>White Paper</span>
+                </a>
+                {/*<a href="#" target="_blank" className="hero-link" title="Sway Social One Pager">*/}
+                {/*  <DocEl/>*/}
+                {/*  <span>One Pager</span>*/}
+                {/*</a>*/}
+                {/*<a href="#" target="_blank" className="hero-link" title="Sway Social Deck">*/}
+                {/*  <ColEl/>*/}
+                {/*  <span>Deck</span>*/}
+                {/*</a>*/}
+              </div>
             </div>
             <div className="col-md-7 hero-el">
               <HeroEl/>
