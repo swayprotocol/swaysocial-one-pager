@@ -12,7 +12,7 @@ const Hero = () => (
         <div className="container ">
           <div className="row">
             <div className="col-md-5 text-el">
-              <h1 className="mb-md-4 mb-0 center-sm">Monetize<br/>the Metaverse</h1>
+              <h1 className="mb-md-4 mb-0 center-sm">SocialFi for<br/>the Metaverse</h1>
               <p className="d-none d-md-block">
                 <strong>Sway Social</strong> is the first social protocol for Metacreators that uses NFTs to translate
                 social capital into an asset class. This allows anyone to monetize their Metaverse on their terms.
