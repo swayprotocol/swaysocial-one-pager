@@ -2,16 +2,8 @@
 @import url('/fonts/stylesheet.css');
 
 // bootstrap
-@import "~bootstrap/scss/functions";
-@import "~bootstrap/scss/variables";
-@import "~bootstrap/scss/mixins";
-@import '~bootstrap/scss/utilities';
-@import "~bootstrap/scss/root";
-@import "~bootstrap/scss/reboot";
-@import '~bootstrap/scss/helpers';
-@import '~bootstrap/scss/utilities/api';
-@import "~bootstrap/scss/containers";
-@import "~bootstrap/scss/grid";
+@import "~bootstrap/scss/bootstrap-reboot";
+@import "~bootstrap/scss/bootstrap-grid";
 
 h1 {
   font-weight: bold;
@@ -47,12 +39,16 @@ h4 {
   color: #fff;
 }
 
-.center-sm {    
-  text-align: center;    
+.center-sm {
+  text-align: center;
 
   @media only screen and (min-width: 768px) {
     text-align: left;
   }
+}
+
+.text-center {
+  text-align: center;
 }
 
 .btn {
@@ -226,7 +222,7 @@ h4 {
     background-image: none !important;
 
     @media only screen and (min-width: 768px) {
-      top: 0;      
+      top: 0;
     }
   }
 }
@@ -289,36 +285,87 @@ h4 {
 
 .hero-section {
   background-image: url('/assets/hero-bg.svg');
-  background-position: 100% 100%;
+  background-position: 66% 100%;
   background-repeat: no-repeat;
   background-size: cover;
 
+  @media only screen and (min-width: 768px) {
+    background-position: 100% 100%;
+  }
+
   .hero-section-inner {
-    padding: 20px 0 50px;
+    padding: 20px 0 0;
     overflow: hidden;
     position: relative;
+    @media only screen and (min-width: 576px) {
+      padding: 20px 0 50px;
+    }
   }
 
   .hero-el {
     display: flex;
+    flex-direction: column;
     justify-content: flex-end;
     pointer-events: none;
-    margin-top: -90px;
+
+    svg {
+      width: 100%;
+      margin-top: -60px;
+
+      @media only screen and (min-width: 576px) {
+        margin-top: -20px;
+      }
+      @media only screen and (min-width: 768px) {
+        margin-top: 0;
+      }
+    }
 
     @media only screen and (min-width: 768px) {
       position: relative;
       top: auto;
       right: auto;
-      margin-top: 0;
     }
   }
 
   .text-el {
     z-index: 1;
+    background: linear-gradient(360deg, #020009 -21.15%, #0E1631 139.42%);
+    text-align: center;
+
+    @media only screen and (max-width: 575px) {
+      padding: 50px 3rem;
+    }
+
+    @media only screen and (min-width: 576px) {
+      background: none;
+      text-align: left;
+    }
   }
 
   h1 {
     margin-top: 40px;
+  }
+}
+
+.hero-link {
+  padding: 8px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 2px;
+  margin-right: 20px;
+
+  &:hover {
+    color: #fff;
+    background: linear-gradient(91.88deg, rgba(228, 227, 230, 0.4) 3.18%, rgba(171, 149, 240, 0.4) 97.4%);
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  svg {
+    color: #ceabff;
+    margin-right: 10px;
   }
 }
 
