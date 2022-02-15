@@ -376,15 +376,23 @@ h4 {
   .container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     padding: 20px 0;
     max-width: 1000px;
+
+    @media only screen and (min-width: 768px) {
+      justify-content: space-around;
+    }
   }
 
   figure {
-    margin: 5px;
+    margin: 5px 10px;
     display: flex;
-    height: 35px;
+    height: 28px;
+
+    @media only screen and (min-width: 768px) {
+      height: 35px;
+    }
   }
 }
 
