@@ -1,9 +1,15 @@
 @import 'variables';
-@import url('/fonts/stylesheet.css');
 
 // bootstrap
 @import "~bootstrap/scss/bootstrap-reboot";
 @import "~bootstrap/scss/bootstrap-grid";
+
+// font-family
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600&display=swap');
+
+h1, h2, h3, h4 {
+  font-family: 'Arial', sans-serif;
+}
 
 h1 {
   font-weight: bold;
