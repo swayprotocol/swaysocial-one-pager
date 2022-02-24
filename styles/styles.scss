@@ -394,10 +394,13 @@ h4 {
   figure {
     margin: 5px 10px;
     display: flex;
-    height: 28px;
 
-    @media only screen and (min-width: 768px) {
-      height: 35px;
+    img {
+      height: 28px;
+
+      @media only screen and (min-width: 768px) {
+        height: 35px;
+      }
     }
   }
 }
